@@ -107,7 +107,7 @@ class LazyDocumentMetaWrapper(LazyObject):
         return self._wrapped.__getitem__(key)
 
     def __setitem__(self, key, value):
-        return self._wrapped.__getitem__(key, value)
+        return self._wrapped.__setitem__(key, value)
 
     def __delitem__(self, key):
         return self._wrapped.__delitem__(key)
